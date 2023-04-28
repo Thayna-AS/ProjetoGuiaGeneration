@@ -4,44 +4,37 @@ import java.util.Scanner;
 
 public class Menu {
 	
-	
-	Scanner read = new Scanner(System.in);
+	Scanner leia = new Scanner(System.in);
 	
 	
 	protected String pedido;
-	protected int op,valor;
+	protected int valor;
 	
 	
-	public Menu(Scanner read, String order, int op, int value) {
+	public Menu(Scanner leia, String pedido, int valor) {
 		super();
-		this.read = read;
-		this.pedido = order;
-		this.op = op;
-		this.valor = value;
+		this.leia = leia;
+		this.pedido = pedido;
+		this.valor = valor;
 	}
-	public Scanner getRead() {
-		return read;
+	public Scanner getLeia() {
+		return leia;
 	}
-	public void setRead(Scanner read) {
-		this.read = read;
+	public void setLeia(Scanner leia) {
+		this.leia = leia;
 	}
-	public String getOrder() {
+	public String getPedido() {
 		return pedido;
 	}
-	public void setOrder(String order) {
-		this.pedido = order;
+	public void setPedido(String pedido) {
+		this.pedido = pedido;
 	}
-	public int getOp() {
-		return op;
-	}
-	public void setOp(int op) {
-		this.op = op;
-	}
-	public int getValue() {
+	
+	public int getValor() {
 		return valor;
 	}
-	public void setValue(int value) {
-		this.valor = value;
+	public void setValor(int valor) {
+		this.valor = valor;
 	}
 	
 	
